@@ -70,7 +70,7 @@ a {
     margin: 0 0 10px 0;
 }
 
-.welcome {
+.welcome  {
     background: url('img/background2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -251,15 +251,15 @@ a {
 }
 
 .bar-status {
-    border-color: #73732E;
-    background-color: #73732E;
+    border-color: #b5af3f;
+    background-color: #b5af3f;
     background-image: none;
     color: #fff;
 }
 
 .bar-status1 {
-    border-color: #73732E;
-    background-color: #73732E;
+    border-color: #b5af3f;
+    background-color: #b5af3f;
     background-image: none;
     color: #fff;
 }
@@ -355,8 +355,8 @@ a {
 }
 
 .status-bar>div:nth-of-type(1) {
-    border-top: solid 2px #73732E;
-    color: #73732E !important;
+    border-top: solid 2px #b5af3f;
+    color: #b5af3f !important;
 }
 
 .status-bar>div:nth-of-type(2) {
@@ -387,7 +387,7 @@ a {
 }
 
 .status1-bg {
-    background: #73732E;
+    background: #b5af3f;
 }
 
 .status2-bg {
@@ -411,21 +411,21 @@ a {
 }
 
 .icon-status1 {
-    background: url('img/icon-status1.svg');
+    background: url('img/icon-status1.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin:0 0 0 12px;
 }
 
 .icon-status2 {
-    background: url('img/icon-status2.svg');
+    background: url('img/icon-status2.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin:0 0 0 12px;
 }
 
 .icon-status3 {
-    background: url('img/icon-status3.svg');
+    background: url('img/icon-status3.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin:0 0 0 12px;
