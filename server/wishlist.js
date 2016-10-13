@@ -16,7 +16,7 @@ function addItem(req, res, next) {
     db.query('SELECT productId FROM wishlist WHERE userId=$1 AND productId=$2', [userId, productId], true)
         .then(function(product) {
             if (product) {
-                return res.send(400, 'This product is already in your wish list');
+                return res.send(400, 'Ce plat est déjà dans votre liste de plats préférés');
             }
             db.query('INSERT INTO wishlist (userId, productId) VALUES ($1, $2)', [userId, productId], true)
                 .then(function () {

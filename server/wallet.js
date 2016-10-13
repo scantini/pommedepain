@@ -16,7 +16,7 @@ function addItem(req, res, next) {
     db.query('SELECT offerId FROM wallet WHERE userId=$1 AND offerId=$2', [userId, offerId], true)
         .then(function(offer) {
             if (offer) {
-                return res.send(400, 'This offer is already in your wallet');
+                return res.send(400, 'Cette promotion est déjà dans votre liste');
             }
             db.query('INSERT INTO wallet (userId, offerId) VALUES ($1, $2)', [userId, offerId], true)
                 .then(function () {

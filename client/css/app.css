@@ -360,14 +360,14 @@ a {
 }
 
 .status-bar>div:nth-of-type(2) {
-    border-top: solid 2px #A87E21;
-    color: #A87E21 !important;
+    border-top: solid 2px #b5af3f;
+    color: #b5af3f !important;
     text-align: center;
 }
 
 .status-bar>div:nth-of-type(3) {
-    border-top: solid 2px #802E13;
-    color: #802E13 !important;
+    border-top: solid 2px #b5af3f;
+    color: #b5af3f !important;
     text-align: right;
 }
 
