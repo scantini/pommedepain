@@ -13,15 +13,15 @@
             <div class="header status{{user.status}}-bg">
                 <img class="avatar" ng-src="{{user.pictureurl || 'img/avatar.jpg'}}" ng-click="popupDialog()"/>
                 <h2>{{user.firstname}} {{user.lastname}}</h2>
-                <h3>Member since {{user.createddate | date:'longDate'}}</h3>
+                <h3>Membre depuis {{user.createddate | date:'longDate'}}</h3>
             </div>
 
             <div style="padding: 8px 16px;" class="status{{user.status}}">
 
                 <div class="profile-status">
                     <div>
-                        <div class="profile-level">{{statusLabel}} Member</div>
-                        <div class="profile-points"><img ng-src="css/img/icon-points{{user.status}}.svg" style="height: 1.2rem;width: 1.2rem;"/> {{user.points || 0}} Nibs</div>
+                        <div class="profile-level">Membre {{statusLabel}} </div>
+                        <div class="profile-points"><img ng-src="css/img/icon-points{{user.status}}.svg" style="height: 1.2rem;width: 1.2rem;"/> {{user.points || 0}} point</div>
                         <p>{{statusDescription}}</p>
                     </div>
                     <div class="icon-status icon-status{{user.status}}"></div>
@@ -30,15 +30,15 @@
                 <div class="status-bar">
                     <div class="forastero">
                         <p>Petit Gourmand</p>
-                        <p>0-5000 Nibs</p>
+                        <p>0-5000 points</p>
                     </div>
                     <div class="trinitario">
                         <p>Gourmand</p>
-                        <p>&gt;5000 Nibs</p>
+                        <p>&gt;5000 points</p>
                     </div>
                     <div class="Criollo">
                         <p>Gourmand Premium</p>
-                        <p>&gt;10000 Nibs</p>
+                        <p>&gt;10000 points</p>
                     </div>
                 </div>
 
