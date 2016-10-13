@@ -2,7 +2,7 @@ var db = require('./pghelper'),
     winston = require('winston');
 
 function findAll(limit) {
-    return db.query("SELECT id, sfId, name, startDate, endDate, description, image__c AS image, campaignPage__c AS campaignPage, publishDate__c AS publishDate FROM salesforce.campaign WHERE type='Offer' AND status='In Progress' ORDER BY publishDate DESC LIMIT $1", [limit]);
+    return db.query("SELECT id, sfId, name, startDate, endDate, description, image__c AS image, campaignPage__c AS campaignPage, LastModifiedDate FROM salesforce.campaign WHERE type='Offer' AND status='In Progress' ORDER BY LastModifiedDate DESC LIMIT $1", [limit]);
 };
 
 function findById(id) {
