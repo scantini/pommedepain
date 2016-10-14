@@ -81,7 +81,7 @@ angular.module('nibs.offer', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.wa
 //                    $ionicPopup.alert({title: 'Facebook', content: 'Something went wrong while sharing this offer.'});
 //                });
             Status.show('Shared on Facebook!');
-            Activity.create({type: "Shared on Facebook", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
+            Activity.create({type: "Partagé sur Facebook", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
                 .success(function(status) {
                     Status.checkStatus(status);
                 });
@@ -90,7 +90,7 @@ angular.module('nibs.offer', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.wa
 
         $scope.shareOnTwitter = function () {
             Status.show('Shared on Twitter!');
-            Activity.create({type: "Shared on Twitter", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
+            Activity.create({type: "Partagé sur Twitter", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
                 .success(function(status) {
                     Status.checkStatus(status);
                 });
@@ -98,7 +98,7 @@ angular.module('nibs.offer', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.wa
 
         $scope.shareOnGoogle = function () {
             Status.show('Shared on Google+!');
-            Activity.create({type: "Shared on Google+", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
+            Activity.create({type: "Partagé sur Google+", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
                 .success(function(status) {
                     Status.checkStatus(status);
                 });
@@ -107,7 +107,7 @@ angular.module('nibs.offer', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.wa
         $scope.saveToWallet = function () {
             WalletItem.create({offerId: $scope.offer.id}).success(function(status) {
                 Status.show('Saved to your wallet!');
-                Activity.create({type: "Saved to Wallet", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
+                Activity.create({type: "Sauvegardé dans vos promotions", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
                     .success(function(status) {
                         Status.checkStatus(status);
                     });
@@ -115,7 +115,7 @@ angular.module('nibs.offer', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.wa
         };
 
         $scope.redeem = function () {
-            Activity.create({type: "Redeemed Offer", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
+            Activity.create({type: "Promotion dans votre liste", points: 1000, offerId: $scope.offer.sfid, name: $scope.offer.name, image: $scope.offer.image})
                 .success(function(status) {
                     Status.checkStatus(status);
                 });

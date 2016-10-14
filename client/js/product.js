@@ -60,7 +60,7 @@ angular.module('nibs.product', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.
         });
 
         $scope.shareOnFacebook = function () {
-            Status.show('Shared on Facebook!');
+            Status.show('Partagé sur Facebook!');
             Activity.create({type: "Shared on Facebook", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
                 .success(function(status) {
                     Status.checkStatus(status);
@@ -68,7 +68,7 @@ angular.module('nibs.product', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.
         };
 
         $scope.shareOnTwitter = function () {
-            Status.show('Shared on Twitter!');
+            Status.show('Partagé sur Twitter!');
             Activity.create({type: "Shared on Twitter", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
                 .success(function(status) {
                     Status.checkStatus(status);
@@ -76,7 +76,7 @@ angular.module('nibs.product', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.
         };
 
         $scope.shareOnGoogle = function () {
-            Status.show('Shared on Google+!');
+            Status.show('Partagé sur Google+!');
             Activity.create({type: "Shared on Google+", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
                 .success(function(status) {
                     Status.checkStatus(status);
@@ -85,7 +85,7 @@ angular.module('nibs.product', ['openfb', 'nibs.status', 'nibs.activity', 'nibs.
 
         $scope.saveToWishList = function () {
             WishListItem.create({productId: $scope.product.id}).success(function(status) {
-                Status.show('Added to your wish list!');
+                Status.show('Ajouter à votre liste!');
                 Activity.create({type: "Added to Wish List", points: 1000, productId: $scope.product.sfid, name: $scope.product.name, image: $scope.product.image})
                     .success(function(status) {
                         Status.checkStatus(status);
