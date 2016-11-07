@@ -1,6 +1,6 @@
 angular.module('nibs.config', [])
 
-.constant('SERVER_URL', 'https://pommedepain.herokuapp.com')
+.constant('SERVER_URL', '')
 
     .constant('FB_APP_ID','1618878675020266')
 
